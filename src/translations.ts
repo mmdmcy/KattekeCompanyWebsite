@@ -1,9 +1,11 @@
 export const translations = {
   en: {
     nav: {
+      home: 'Home',
       services: 'Services',
       expertise: 'Expertise',
-      contact: 'Contact'
+      contact: 'Contact',
+      legal: 'Legal'
     },
     hero: {
       title: 'Creating Digital Solutions That Matter',
@@ -42,14 +44,34 @@ export const translations = {
       button: 'Contact Me'
     },
     footer: {
-      rights: 'All rights reserved.'
+      rights: 'All rights reserved.',
+      company: {
+        title: 'Company',
+        about: 'About Katteke',
+        description: 'Software development, production, and publishing.',
+        social: 'Follow us on X'
+      },
+      legal: {
+        title: 'Legal',
+        terms: 'Terms of Service',
+        refunds: 'Refund Policy',
+        cancellation: 'Cancellation Policy',
+        promotions: 'Promotional Terms'
+      },
+      contact: {
+        title: 'Contact',
+        email: 'Email',
+        social: 'Social Media'
+      }
     }
   },
   nl: {
     nav: {
+      home: 'Home',
       services: 'Diensten',
       expertise: 'Expertise',
-      contact: 'Contact'
+      contact: 'Contact',
+      legal: 'Juridisch'
     },
     hero: {
       title: 'Digitale Oplossingen die Ertoe Doen',
@@ -88,7 +110,25 @@ export const translations = {
       button: 'Neem Contact Op'
     },
     footer: {
-      rights: 'Alle rechten voorbehouden.'
+      rights: 'Alle rechten voorbehouden.',
+      company: {
+        title: 'Bedrijf',
+        about: 'Over Katteke',
+        description: 'Ontwikkelen, produceren en uitgeven van software.',
+        social: 'Volg ons op X'
+      },
+      legal: {
+        title: 'Juridisch',
+        terms: 'Algemene Voorwaarden',
+        refunds: 'Terugbetalingsbeleid',
+        cancellation: 'Annuleringsbeleid',
+        promotions: 'Actievoorwaarden'
+      },
+      contact: {
+        title: 'Contact',
+        email: 'E-mail',
+        social: 'Social Media'
+      }
     }
   }
 } as const;
