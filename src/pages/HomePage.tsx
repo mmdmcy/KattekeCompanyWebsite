@@ -10,17 +10,26 @@ export default function HomePage() {
       {/* Hero Section */}
       <header className="bg-brand-black">
         <div className="container mx-auto px-6 py-24">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              {t('hero.title')}
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              {t('hero.subtitle')}
-            </p>
-            <a href="#contact" 
-              className="inline-flex items-center px-6 py-3 bg-brand-orange text-white rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
-              {t('hero.cta')} <ChevronRight className="ml-2" size={20} />
-            </a>
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="w-full md:w-1/3">
+              <img 
+                src="/pics/logo_transparent.png" 
+                alt="Katteke Logo" 
+                className="w-full h-auto max-w-md mx-auto"
+              />
+            </div>
+            <div className="w-full md:w-2/3">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                {t('hero.title')}
+              </h1>
+              <p className="text-xl text-gray-300 mb-8">
+                {t('hero.subtitle')}
+              </p>
+              <a href="#contact" 
+                className="inline-flex items-center px-6 py-3 bg-brand-orange text-white rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                {t('hero.cta')} <ChevronRight className="ml-2" size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </header>
