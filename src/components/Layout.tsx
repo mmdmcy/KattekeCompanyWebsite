@@ -15,7 +15,7 @@ export function Layout() {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.png" alt="Katteke Logo" className="h-10 w-10" />
+              <img src="/logo_transparent.png" alt="Katteke Logo" className="h-10 w-10" />
               <span className="text-white text-2xl font-bold">Katteke</span>
             </Link>
             <div className="flex items-center space-x-8">
