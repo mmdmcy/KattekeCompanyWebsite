@@ -13,7 +13,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/3">
               <img 
-                src="/pics/logo_transparent.png" 
+                src="/logo_transparent.png" 
                 alt="Katteke Logo" 
                 className="w-full h-auto max-w-md mx-auto"
               />
