@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, Outlet } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { LanguageSwitch } from './LanguageSwitch';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Instagram } from 'lucide-react';
 
 export function Layout() {
   const { t } = useLanguage();
@@ -103,14 +103,25 @@ export function Layout() {
             <div>
               <h3 className="text-lg font-semibold mb-4">{t('footer.company.title')}</h3>
               <p className="text-gray-400 mb-2">{t('footer.company.description')}</p>
-              <a 
-                href="https://x.com/Kattekke" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-brand-orange hover:text-opacity-80"
-              >
-                {t('footer.company.social')}
-              </a>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://x.com/Kattekke" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-brand-orange hover:text-opacity-80"
+                >
+                  {t('footer.company.social')}
+                </a>
+                <a 
+                  href="https://www.instagram.com/kattekee/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-brand-orange hover:text-opacity-80 flex items-center"
+                >
+                  <Instagram size={20} className="mr-1" />
+                  Instagram
+                </a>
+              </div>
             </div>
 
             {/* Legal Links */}
@@ -159,7 +170,17 @@ export function Layout() {
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    {t('footer.contact.social')}: @Kattekke
+                    X: @Kattekke
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.instagram.com/kattekee/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Instagram: @kattekee
                   </a>
                 </li>
               </ul>
