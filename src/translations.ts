@@ -8,39 +8,39 @@ export const translations = {
       legal: 'Legal'
     },
     hero: {
-      title: 'Creating Digital Solutions That Matter',
-      subtitle: 'I develop innovative web applications, mobile apps, and digital platforms that solve real problems and enhance people\'s daily lives.',
+      title: 'Advanced AI & Software Solutions',
+      subtitle: 'I specialize in artificial intelligence, machine learning, and innovative software solutions that transform ideas into intelligent, scalable applications.',
       cta: 'Get in touch'
     },
     services: {
       title: 'My Services',
       web: {
-        title: 'Web Applications',
-        description: 'I create intuitive and user-friendly web applications that make life easier, from productivity tools to entertainment platforms.'
+        title: 'AI & Machine Learning',
+        description: 'I develop custom AI solutions and machine learning models that solve complex problems and drive innovation.'
       },
       mobile: {
-        title: 'Mobile Apps',
-        description: 'I build engaging mobile applications that provide value to users through seamless experiences and innovative features.'
+        title: 'SaaS Development',
+        description: 'I create scalable, cloud-based software solutions with seamless AI integration and robust architecture.'
       },
       platforms: {
-        title: 'Digital Platforms',
-        description: 'I develop scalable platforms that connect people, streamline processes, and create new possibilities for users.'
+        title: 'Custom Software',
+        description: 'I build bespoke applications, web platforms, and mobile solutions tailored to specific needs and challenges.'
       }
     },
     expertise: {
       title: 'My Expertise',
       modern: {
-        title: 'Modern Technology',
-        description: 'I leverage cutting-edge technologies to create fast, reliable, and user-friendly digital solutions that stand the test of time.'
+        title: 'AI Technology',
+        description: 'I leverage cutting-edge AI and machine learning technologies to create intelligent solutions that adapt and evolve.'
       },
       quality: {
         title: 'Quality Solutions',
-        description: 'From concept to deployment, I focus on delivering high-quality applications that provide real value to end users.'
+        description: 'From concept to deployment, I focus on delivering sophisticated applications that provide measurable value and scalable results.'
       }
     },
     contact: {
-      title: 'Let\'s Build Something Amazing',
-      description: 'Have an idea for a project that could make a difference? I\'d love to hear about it and discuss how we can bring it to life.',
+      title: 'Let\'s Build Something Intelligent',
+      description: 'Have a project that could benefit from AI and advanced software solutions? I\'d love to discuss how we can transform it into reality.',
       button: 'Contact Me'
     },
     footer: {
@@ -48,8 +48,8 @@ export const translations = {
       company: {
         title: 'Company',
         about: 'About Katteke',
-        description: 'Software development, production, and publishing.',
-        social: 'Follow us on X'
+        description: 'AI, machine learning, and software development.',
+        social: 'Follow me on X'
       },
       legal: {
         title: 'Legal',
@@ -74,39 +74,39 @@ export const translations = {
       legal: 'Juridisch'
     },
     hero: {
-      title: 'Digitale Oplossingen die Ertoe Doen',
-      subtitle: 'Ik ontwikkel innovatieve webapplicaties, mobiele apps en digitale platforms die echte problemen oplossen en het dagelijks leven verbeteren.',
+      title: 'Geavanceerde AI & Software Oplossingen',
+      subtitle: 'Ik ben gespecialiseerd in kunstmatige intelligentie, machine learning en innovatieve software-oplossingen die ideeën transformeren in intelligente, schaalbare applicaties.',
       cta: 'Neem contact op'
     },
     services: {
       title: 'Mijn Diensten',
       web: {
-        title: 'Webapplicaties',
-        description: 'Ik creëer intuïtieve en gebruiksvriendelijke webapplicaties die het leven makkelijker maken, van productiviteitstools tot entertainmentplatforms.'
+        title: 'AI & Machine Learning',
+        description: 'Ik ontwikkel op maat gemaakte AI-oplossingen en machine learning modellen die complexe problemen oplossen en innovatie stimuleren.'
       },
       mobile: {
-        title: 'Mobiele Apps',
-        description: 'Ik bouw boeiende mobiele applicaties die waarde bieden aan gebruikers door naadloze ervaringen en innovatieve functies.'
+        title: 'SaaS Ontwikkeling',
+        description: 'Ik creëer schaalbare, cloud-gebaseerde softwareoplossingen met naadloze AI-integratie en robuuste architectuur.'
       },
       platforms: {
-        title: 'Digitale Platforms',
-        description: 'Ik ontwikkel schaalbare platforms die mensen verbinden, processen stroomlijnen en nieuwe mogelijkheden creëren voor gebruikers.'
+        title: 'Maatwerk Software',
+        description: 'Ik bouw op maat gemaakte applicaties, webplatforms en mobiele oplossingen afgestemd op specifieke behoeften en uitdagingen.'
       }
     },
     expertise: {
       title: 'Mijn Expertise',
       modern: {
-        title: 'Moderne Technologie',
-        description: 'Ik maak gebruik van de nieuwste technologieën om snelle, betrouwbare en gebruiksvriendelijke digitale oplossingen te creëren die de tand des tijds doorstaan.'
+        title: 'AI Technologie',
+        description: 'Ik maak gebruik van de nieuwste AI- en machine learning-technologieën om intelligente oplossingen te creëren die zich aanpassen en ontwikkelen.'
       },
       quality: {
         title: 'Kwaliteitsoplossingen',
-        description: 'Van concept tot implementatie focus ik op het leveren van hoogwaardige applicaties die echte waarde bieden aan eindgebruikers.'
+        description: 'Van concept tot implementatie focus ik op het leveren van geavanceerde applicaties die meetbare waarde en schaalbare resultaten bieden.'
       }
     },
     contact: {
-      title: 'Laten we Iets Geweldigs Bouwen',
-      description: 'Heb je een idee voor een project dat het verschil kan maken? Ik hoor graag van je en bespreek hoe we het tot leven kunnen brengen.',
+      title: 'Laten we Iets Intelligents Bouwen',
+      description: 'Heeft u een project dat kan profiteren van AI en geavanceerde software-oplossingen? Ik bespreek graag hoe we het kunnen omzetten in realiteit.',
       button: 'Neem Contact Op'
     },
     footer: {
@@ -114,8 +114,8 @@ export const translations = {
       company: {
         title: 'Bedrijf',
         about: 'Over Katteke',
-        description: 'Ontwikkelen, produceren en uitgeven van software.',
-        social: 'Volg ons op X'
+        description: 'AI, machine learning en softwareontwikkeling.',
+        social: 'Volg mij op X'
       },
       legal: {
         title: 'Juridisch',
