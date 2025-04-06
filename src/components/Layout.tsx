@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation, Outlet } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { LanguageSwitch } from './LanguageSwitch';
+import { Menu, X } from 'lucide-react';
 
 export function Layout() {
   const { t } = useLanguage();
   const location = useLocation();
   const isHome = location.pathname === '/';
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
@@ -15,24 +17,76 @@ export function Layout() {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo_transparent.png" alt="Katteke Logo" className="h-10 w-10" />
-              <span className="text-white text-2xl font-bold">Katteke</span>
+              <img src="/logo_transparent.png" alt="Katteke Logo" className="h-8 w-8 md:h-10 md:w-10" />
+              <span className="text-white text-xl md:text-2xl font-bold">Katteke</span>
             </Link>
-            <div className="flex items-center space-x-8">
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-white hover:text-brand-orange transition-colors"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
               {isHome ? (
                 <>
-                  <a href="#services" className="text-white hover:text-brand-orange">{t('nav.services')}</a>
-                  <a href="#expertise" className="text-white hover:text-brand-orange">{t('nav.expertise')}</a>
-                  <a href="#contact" className="text-white hover:text-brand-orange">{t('nav.contact')}</a>
+                  <a href="#services" className="text-white hover:text-brand-orange transition-colors">{t('nav.services')}</a>
+                  <a href="#expertise" className="text-white hover:text-brand-orange transition-colors">{t('nav.expertise')}</a>
+                  <a href="#contact" className="text-white hover:text-brand-orange transition-colors">{t('nav.contact')}</a>
                 </>
               ) : (
-                <Link to="/" className="text-white hover:text-brand-orange">
+                <Link to="/" className="text-white hover:text-brand-orange transition-colors">
                   {t('nav.home')}
                 </Link>
               )}
               <LanguageSwitch />
             </div>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden mt-4 space-y-4 border-t border-gray-700 pt-4">
+              {isHome ? (
+                <>
+                  <a
+                    href="#services"
+                    className="block text-white hover:text-brand-orange transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {t('nav.services')}
+                  </a>
+                  <a
+                    href="#expertise"
+                    className="block text-white hover:text-brand-orange transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {t('nav.expertise')}
+                  </a>
+                  <a
+                    href="#contact"
+                    className="block text-white hover:text-brand-orange transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {t('nav.contact')}
+                  </a>
+                </>
+              ) : (
+                <Link
+                  to="/"
+                  className="block text-white hover:text-brand-orange transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t('nav.home')}
+                </Link>
+              )}
+              <div className="pt-2">
+                <LanguageSwitch />
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
