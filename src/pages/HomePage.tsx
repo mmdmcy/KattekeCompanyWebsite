@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <header className="bg-gradient-to-br from-brand-black via-gray-900 to-brand-orange/90">
+      <header className="bg-gradient-to-r from-brand-orange/90 via-gray-900 to-brand-black">
         <div className="container mx-auto px-6 py-24">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/3">
