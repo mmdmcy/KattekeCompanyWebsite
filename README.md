@@ -53,7 +53,7 @@ Ready to leverage AI for your project? Let's discuss:
 Klaar om AI in te zetten voor uw project? Laten we het bespreken:
 
 - 📧 Email | E-mail: katteke@protonmail.com
-- 🐦 Twitter | Twitter: [@Kattekke](https://x.com/Kattekke)
+- 🐦 X | X: [@Kattekke](https://x.com/Kattekke)
 
 ## License | Licentie
 
