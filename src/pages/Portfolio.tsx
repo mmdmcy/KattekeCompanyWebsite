@@ -75,11 +75,11 @@ export default function Portfolio() {
               className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100"
             >
               {project.images && project.images.length > 0 && (
-                <div className="relative h-48 overflow-hidden bg-gray-100">
+                <div className="relative bg-gray-100 p-4 flex justify-center">
                   <img
                     src={project.images[0]}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="max-h-[400px] w-auto object-contain"
                   />
                 </div>
               )}
@@ -107,13 +107,13 @@ export default function Portfolio() {
                   ))}
                 </div>
                 {project.images && project.images.length > 1 && (
-                  <div className="mt-4 grid grid-cols-2 gap-2">
+                  <div className="mt-4 grid grid-cols-2 gap-4">
                     {project.images.slice(1).map((image, imgIndex) => (
-                      <div key={imgIndex} className="relative h-24 overflow-hidden bg-gray-100 rounded">
+                      <div key={imgIndex} className="relative bg-gray-100 p-2 rounded flex justify-center">
                         <img
                           src={image}
                           alt={`${project.title} additional view ${imgIndex + 1}`}
-                          className="w-full h-full object-cover"
+                          className="max-h-[200px] w-auto object-contain"
                         />
                       </div>
                     ))}
