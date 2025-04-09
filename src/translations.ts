@@ -1,7 +1,10 @@
+import { translations } from './translations';
+
 export const translations = {
   en: {
     nav: {
       home: 'Home',
+      portfolio: 'Portfolio',
       services: 'Services',
       expertise: 'Expertise',
       contact: 'Contact',
@@ -68,6 +71,7 @@ export const translations = {
   nl: {
     nav: {
       home: 'Home',
+      portfolio: 'Portfolio',
       services: 'Diensten',
       expertise: 'Expertise',
       contact: 'Contact',
