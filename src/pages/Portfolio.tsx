@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Github } from 'lucide-react';
+import { ImageModal } from '../components/ImageModal';
 
 interface Project {
   title: string;
@@ -12,6 +13,7 @@ interface Project {
 
 export default function Portfolio() {
   const { language } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const projects: Project[] = [
     {
@@ -79,7 +81,8 @@ export default function Portfolio() {
                   <img
                     src={project.images[0]}
                     alt={project.title}
-                    className="max-h-[400px] w-auto object-contain"
+                    className="max-h-[400px] w-auto object-contain cursor-pointer hover:opacity-90 transition-opacity"
+                    onClick={() => setSelectedImage(project.images![0])}
                   />
                 </div>
               )}
@@ -113,7 +116,8 @@ export default function Portfolio() {
                         <img
                           src={image}
                           alt={`${project.title} additional view ${imgIndex + 1}`}
-                          className="max-h-[200px] w-auto object-contain"
+                          className="max-h-[200px] w-auto object-contain cursor-pointer hover:opacity-90 transition-opacity"
+                          onClick={() => setSelectedImage(image)}
                         />
                       </div>
                     ))}
@@ -124,6 +128,14 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
+
+      {selectedImage && (
+        <ImageModal
+          src={selectedImage}
+          alt="Project Preview"
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }
