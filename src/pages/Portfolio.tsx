@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Github } from 'lucide-react';
 import { ImageModal } from '../components/ImageModal';
 
 interface Project {
   title: string;
-  link: string;
   overview: string;
   technologies: string[];
   images?: string[];
@@ -18,40 +16,34 @@ export default function Portfolio() {
   const projects: Project[] = [
     {
       title: "Manufacturing Process Analyzer",
-      link: "https://github.com/mmdmcy/manufacturing-process-analyzer",
       overview: "A Java-based application designed to streamline and optimize manufacturing processes through data analysis and reporting. Features comprehensive data management, process control, and statistical analysis capabilities.",
       technologies: ["Java", "SQL", "Object-Oriented Programming", "Statistical Analysis"],
       images: ["manufacturingProcessAnalyzer.png"]
     },
     {
       title: "Superset Analytics Project",
-      link: "https://github.com/mmdmcy/manufacturing-process-analyzer",
       overview: "A data analytics platform using Apache Superset, focusing on reusable data layer visualization, data connectivity, and deployable dashboards.",
       technologies: ["Apache Superset", "Docker", "Python", "SQL", "RESTful APIs"]
     },
     {
       title: "Metrology Tools Project",
-      link: "https://github.com/mmdmcy/metrology-tools",
       overview: "A lightweight web application enhancing team collaboration through Holiday Helper, PI Planner, and RD Test Mode tools. Built for efficient resource management and planning.",
       technologies: ["ASP.NET Core", "JavaScript", "HTML", "CSS", "RESTful APIs"],
       images: ["MetrologyTools.png"]
     },
     {
       title: "Software Update System",
-      link: "https://github.com/mmdmcy/Software-Update-System",
       overview: "A framework for performing non-disruptive software updates across interconnected processes in complex systems where continuous operation is critical.",
       technologies: ["Python", "Flask", "PyYAML", "Pytest", "Multiprocessing"]
     },
     {
       title: "Product Report Integration System",
-      link: "https://github.com/mmdmcy/Product-Report-Integration",
       overview: "A centralized system for generating, managing, and distributing product reports, integrating Python and PowerShell scripts for automated data processing.",
       technologies: ["Python", "PowerShell", "Jinja2", "JSON", "Matplotlib"],
       images: ["ProductReportIntegration_SecurityStatusDashboard.png", "ProductReportIntegration_security_status_pie.png"]
     },
     {
       title: "System Dynamics Simulator",
-      link: "https://github.com/mmdmcy/System-Dynamics-Simulator",
       overview: "A real-time system dynamics visualization and monitoring dashboard for high-precision manufacturing environments, demonstrating complex system interactions.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
       images: ["systemDynamicsSimulator.png", "SystemDynamicsSimulator2.png"]
@@ -87,17 +79,7 @@ export default function Portfolio() {
                 </div>
               )}
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h2 className="text-2xl font-bold text-brand-black">{project.title}</h2>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-orange hover:text-opacity-80 transition-colors"
-                  >
-                    <Github size={24} />
-                  </a>
-                </div>
+                <h2 className="text-2xl font-bold text-brand-black mb-4">{project.title}</h2>
                 <p className="text-gray-600 mb-4">{project.overview}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
