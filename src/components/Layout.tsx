@@ -33,22 +33,14 @@ export function Layout() {
             <div className="hidden md:flex items-center space-x-8">
               {isHome ? (
                 <>
-                  <Link to="/portfolio" className="text-white hover:text-brand-orange transition-colors">
-                    {t('nav.portfolio')}
-                  </Link>
                   <a href="#services" className="text-white hover:text-brand-orange transition-colors">{t('nav.services')}</a>
                   <a href="#expertise" className="text-white hover:text-brand-orange transition-colors">{t('nav.expertise')}</a>
                   <a href="#contact" className="text-white hover:text-brand-orange transition-colors">{t('nav.contact')}</a>
                 </>
               ) : (
-                <>
-                  <Link to="/" className="text-white hover:text-brand-orange transition-colors">
-                    {t('nav.home')}
-                  </Link>
-                  <Link to="/portfolio" className="text-white hover:text-brand-orange transition-colors">
-                    {t('nav.portfolio')}
-                  </Link>
-                </>
+                <Link to="/" className="text-white hover:text-brand-orange transition-colors">
+                  {t('nav.home')}
+                </Link>
               )}
               <LanguageSwitch />
             </div>
@@ -57,13 +49,6 @@ export function Layout() {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="md:hidden mt-4 space-y-4 border-t border-gray-700 pt-4">
-              <Link
-                to="/portfolio"
-                className="block text-white hover:text-brand-orange transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('nav.portfolio')}
-              </Link>
               {isHome ? (
                 <>
                   <a
